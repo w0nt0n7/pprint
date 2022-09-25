@@ -1180,7 +1180,7 @@ namespace pprint {
         print_internal(const Pointer& value, size_t indent = 0, const std::string& line_terminator = "\n",
         size_t level = 0) {
       stream_ << std::string(indent, ' ') << "<" <<
-      type(value) << " at " << &value << ">"
+      type(value) << " at " << &value << ", value=" << value << ">"
                   << line_terminator;
     }
 
